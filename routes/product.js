@@ -14,6 +14,7 @@ const upload = require("../middleware/multer");
 const router = express.Router();
 
 
+router.post("/add-bulk", addBulk);
 // ===============================
 // TEST / ROOT
 // ===============================
@@ -31,7 +32,6 @@ router.get("/", (req, res) => {
 // ===============================
 
 // Bulk products
-router.post("/add-bulk", addBulk);
 
 // Single product with images
 router.post(

@@ -94,6 +94,8 @@ const connectDb = require("../config/db");
 connectDb();
 
 
+console.log("backend running check")
+
 // ===============================
 // HEALTH CHECK
 // ===============================

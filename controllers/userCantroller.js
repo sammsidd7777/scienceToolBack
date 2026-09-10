@@ -23,8 +23,11 @@ exports.signup = async (req, res) => {
 
     const userData = JSON.parse(JSON.stringify(newUser));
     // console.log(userData,"userdata");
+     res.status(200).json({
+      status: "succesful",
+      message: "creating user: " + userData,
+    });
 
-    createSendToken(userData, req, res); // Send the token after user creation
   } catch (error) {
     console.log(error.message);
     res.status(400).json({

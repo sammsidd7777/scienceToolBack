@@ -91,9 +91,9 @@ app.use("/payment", paymentRoutes);
 
 ;
 
-const connectDb = require("./config/db");
+const connectDb = require("../config/db");
 
-// connectDb();
+connectDb();
 
 
 console.log("backend running check")

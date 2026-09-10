@@ -89,7 +89,9 @@ app.use("/payment", paymentRoutes);
 // DATABASE
 // ===============================
 
-const connectDb = require("../config/db");
+;
+
+const connectDb = require("./config/db");
 
 connectDb();
 
